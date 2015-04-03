@@ -1,8 +1,18 @@
 Rails.application.routes.draw do
+get '/' => 'welcome#index'
 
+resources :castingdirectors
 
+<<<<<<< HEAD
   root 'casting_directors#signup'
+=======
+resources :auditions
+>>>>>>> b12ee09f4df3920c98d7a2dc3b20fff3862b5478
 
+resources :welcome
+
+
+root 'welcome#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
